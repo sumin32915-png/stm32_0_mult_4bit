@@ -1,0 +1,8 @@
+[1] PASS 로그
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\mult_4bit\build\sim\run-04722c79cc1d40f69336c48774f28943\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+PASS multiplier: 256 input pairs
+C:\Users\sumin\mult_4bit\sim\tb_mult_4bit.sv:17: $finish called at 256000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\sumin\mult_4bit\build\sim\wave.vcd
