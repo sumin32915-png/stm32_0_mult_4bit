@@ -1,3 +1,22 @@
-# PDF의 보드 핀 표를 보고 PACKAGE_PIN과 IOSTANDARD를 직접 작성하세요.
-# get_ports 대상은 자신이 작성한 RTL 포트명과 일치해야 합니다.
-# 논리 시뮬레이션은 XDC의 실제 핀 배정을 검증하지 않습니다.
+# Combo II-DLD 핀 배정: 강의 저장소 LAB1 핀 설정 참고
+# 입력 b[3:0]: 스위치 0~3
+set_property PACKAGE_PIN U4 [get_ports {b[0]}]
+set_property PACKAGE_PIN V4 [get_ports {b[1]}]
+set_property PACKAGE_PIN W1 [get_ports {b[2]}]
+set_property PACKAGE_PIN W4 [get_ports {b[3]}]
+# 입력 a[3:0]: 스위치 4~7
+set_property PACKAGE_PIN T1 [get_ports {a[0]}]
+set_property PACKAGE_PIN U2 [get_ports {a[1]}]
+set_property PACKAGE_PIN W3 [get_ports {a[2]}]
+set_property PACKAGE_PIN Y1 [get_ports {a[3]}]
+# 출력 m[7:0]: LED 0~7
+set_property PACKAGE_PIN N5 [get_ports {m[0]}]
+set_property PACKAGE_PIN M1 [get_ports {m[1]}]
+set_property PACKAGE_PIN M3 [get_ports {m[2]}]
+set_property PACKAGE_PIN M7 [get_ports {m[3]}]
+set_property PACKAGE_PIN N7 [get_ports {m[4]}]
+set_property PACKAGE_PIN M2 [get_ports {m[5]}]
+set_property PACKAGE_PIN M4 [get_ports {m[6]}]
+set_property PACKAGE_PIN L4 [get_ports {m[7]}]
+# 전압 기준
+set_property IOSTANDARD LVCMOS33 [get_ports {a[*] b[*] m[*]}]
